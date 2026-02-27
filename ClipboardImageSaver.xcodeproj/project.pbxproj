@@ -10,6 +10,7 @@
 		191384ACFD34C7DBFFDAE39F /* ImageSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EAE1B97B74DF60FF28250 /* ImageSaveHelper.swift */; };
 		87E7D25A70FD07B3EA3FEE62 /* ClipboardImageSaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56C39D414D09C61F21564E /* ClipboardImageSaverApp.swift */; };
 		A60980B36259E6474EA8C995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838D2E98D9076A8A4B92C99 /* ContentView.swift */; };
+		D3A1B2C4E5F6071829304150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A1B2C4E5F60718293041AA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,12 +18,14 @@
 		1F56C39D414D09C61F21564E /* ClipboardImageSaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardImageSaverApp.swift; sourceTree = "<group>"; };
 		504EAE1B97B74DF60FF28250 /* ImageSaveHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaveHelper.swift; sourceTree = "<group>"; };
 		6838D2E98D9076A8A4B92C99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3A1B2C4E5F60718293041AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		80A4084812EBCCDBD893546A /* ClipboardImageSaver */ = {
 			isa = PBXGroup;
 			children = (
+				D3A1B2C4E5F60718293041AA /* Assets.xcassets */,
 				1F56C39D414D09C61F21564E /* ClipboardImageSaverApp.swift */,
 				6838D2E98D9076A8A4B92C99 /* ContentView.swift */,
 				504EAE1B97B74DF60FF28250 /* ImageSaveHelper.swift */,
@@ -54,6 +57,7 @@
 			buildConfigurationList = 3F9058F97AB83E518C2F4B7B /* Build configuration list for PBXNativeTarget "ClipboardImageSaver" */;
 			buildPhases = (
 				59AA8A063FFF740821DD7982 /* Sources */,
+				D3A1B2C4E5F60718293041BB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +115,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3A1B2C4E5F60718293041BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A1B2C4E5F6071829304150 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		6575237A2979904C31ACA964 /* Debug */ = {
