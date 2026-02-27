@@ -6,15 +6,7 @@ Thanks for your interest in contributing! This is a small project and contributi
 
 1. Fork the repository
 2. Clone your fork locally
-3. Install [XcodeGen](https://github.com/yonaskolb/XcodeGen) if you don't have it:
-   ```bash
-   brew install xcodegen
-   ```
-4. Generate the Xcode project:
-   ```bash
-   xcodegen generate
-   ```
-5. Open `ClipboardImageSaver.xcodeproj` in Xcode, or build from the command line:
+3. Open `ClipboardImageSaver.xcodeproj` in Xcode, or build from the command line:
    ```bash
    xcodebuild -project ClipboardImageSaver.xcodeproj \
      -scheme ClipboardImageSaver \
@@ -29,7 +21,7 @@ Thanks for your interest in contributing! This is a small project and contributi
    git checkout -b my-feature
    ```
 2. Make your changes
-3. Test the app manually — copy an image, paste it, verify the save dialog works
+3. Test the app manually -- copy an image, paste it, verify the save dialog works
 4. Commit with a clear message describing **what** and **why**
 
 ## Submitting a Pull Request
@@ -54,6 +46,5 @@ If you find a bug or have a feature request, please [open an issue](../../issues
 
 ## Project Notes
 
-- The `.xcodeproj` is **not** checked into git — it's generated from `project.yml` by XcodeGen
 - The app targets macOS 14.0+ and uses Swift 6 with SwiftUI
 - No third-party dependencies

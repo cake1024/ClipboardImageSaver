@@ -3,10 +3,9 @@
 .AppleDouble
 .LSOverride
 
-# Xcode
-*.xcodeproj/
-*.xcworkspace/
+# Xcode user-specific files
 xcuserdata/
+*.xcuserstate
 DerivedData/
 *.moved-aside
 *.pbxuser

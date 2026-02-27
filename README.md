@@ -32,11 +32,7 @@ To add a screenshot, take a screenshot of the app and place it in the repo:
 ## Requirements
 
 - macOS 14.0 (Sonoma) or later
-
-### Building from Source
-
-- Xcode 15+
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
+- Xcode 15+ (for building from source)
 
 ## Installation
 
@@ -47,11 +43,7 @@ To add a screenshot, take a screenshot of the app and place it in the repo:
 git clone https://github.com/cake1024/ClipboardImageSaver.git
 cd ClipboardImageSaver
 
-# Install XcodeGen if needed
-brew install xcodegen
-
-# Generate Xcode project and build
-xcodegen generate
+# Build
 xcodebuild -project ClipboardImageSaver.xcodeproj \
   -scheme ClipboardImageSaver \
   -configuration Release \
@@ -65,6 +57,8 @@ cp -R "$(xcodebuild -project ClipboardImageSaver.xcodeproj \
   | grep ' BUILT_PRODUCTS_DIR' \
   | awk '{print $3}')/Clipboard Image Saver.app" /Applications/
 ```
+
+Or open `ClipboardImageSaver.xcodeproj` in Xcode and press `Cmd+B` to build.
 
 ### Option 2: Download Release
 
@@ -91,7 +85,7 @@ Download the latest `.app` from the [Releases](../../releases) page and move it 
 
 ```
 ClipboardImageSaver/
-├── project.yml                          # XcodeGen project spec
+├── ClipboardImageSaver.xcodeproj/       # Xcode project
 ├── ClipboardImageSaver/
 │   ├── ClipboardImageSaverApp.swift     # App entry point, window configuration
 │   ├── ContentView.swift                # Main UI: paste handling, image preview, drag-and-drop
@@ -101,8 +95,6 @@ ClipboardImageSaver/
 ├── README.md
 └── CONTRIBUTING.md
 ```
-
-> **Note:** `ClipboardImageSaver.xcodeproj` is not checked into git. It is generated from `project.yml` by XcodeGen.
 
 ## Troubleshooting
 
