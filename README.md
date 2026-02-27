@@ -98,6 +98,15 @@ ClipboardImageSaver/
 
 ## Troubleshooting
 
+**macOS blocks the app from opening ("not notarized" / "unidentified developer")**
+Because the app is not code-signed or notarized by Apple, macOS Gatekeeper will block it on first launch. To open it:
+
+1. Try to open the app (it will be blocked).
+2. Go to **System Settings > Privacy & Security**, scroll down, and click **Open Anyway**.
+3. Confirm in the follow-up prompt.
+
+After that, the app opens normally like any other app. See [Apple's official guide on opening unsigned apps](https://support.apple.com/en-us/102445) for more details.
+
 **"No image found on clipboard"**
 Make sure you copied an actual image (not a file). For example, use `Cmd+Shift+Ctrl+4` to capture a screen region to the clipboard, or right-click an image in a browser and select "Copy Image".
 
